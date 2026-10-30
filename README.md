@@ -1,6 +1,6 @@
 # Himali Green Giveaways
 
-Comment exports from Himali Green giveaway posts, one folder per giveaway.
+Comment exports from Himali Green giveaway posts, one folder per giveaway, plus a [winner picker](picker/) to draw winners from them.
 
 | Folder | Giveaway |
 | --- | --- |
