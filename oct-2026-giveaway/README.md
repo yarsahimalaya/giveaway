@@ -20,3 +20,12 @@ Comments collected on 2026-10-30 from these posts:
 Notes:
 - People can appear more than once (multiple comments, or the same person on several posts). Dedupe by `profile_link` for one entry per person.
 - Facebook and Instagram profiles of the same person are not linked.
+
+## unique_commenters.csv
+
+One row per commenter, deduplicated by `profile_link` (180 people from 254 comments).
+Same columns as `comments.csv`, holding each person's first comment, plus:
+
+| Column | Description |
+| --- | --- |
+| `comment_count` | Total comments/replies by this profile across all posts |
