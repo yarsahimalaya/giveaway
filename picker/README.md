@@ -12,6 +12,19 @@ npm run dev        # http://localhost:5173
 
 `npm run build` writes a static site to `dist/`. It runs entirely in the browser (nothing is uploaded anywhere), so `dist/` can be opened via `npm run preview` or hosted on any static host.
 
+## Host it on Cloudflare Pages
+
+Connect the repo in Cloudflare Pages with these build settings:
+
+| Setting | Value |
+| --- | --- |
+| Framework preset | None |
+| Root directory | `picker` |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+
+The Node version comes from `.node-version`. No Functions, environment variables or redirects are needed.
+
 ## How it works
 
 1. **Upload**: drop one or more CSVs (e.g. the Facebook and Instagram exports), or paste a plain list of names. Columns are matched automatically. `commenter_name`, `profile_link`, `comment`, `source`, `post_url` and `type` from the exports in this repo are all recognised, and you can remap any column. Only a name column is required.

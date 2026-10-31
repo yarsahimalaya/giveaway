@@ -82,15 +82,34 @@ textarea {
 
 .app {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 .main {
   position: relative;
   z-index: 1;
+  flex: 1;
+  width: 100%;
   max-width: 1320px;
   margin: 0 auto;
   padding: 8px 28px 64px;
+}
+
+.site-footer {
+  position: relative;
+  z-index: 1;
+  padding: 0 28px 24px;
+  font-size: 13.5px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.site-footer a {
+  color: var(--violet);
+  font-weight: 600;
+  overflow-wrap: anywhere;
 }
 
 .topbar {
@@ -100,6 +119,7 @@ textarea {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 16px;
+  width: 100%;
   max-width: 1320px;
   margin: 0 auto;
   padding: 18px 28px;

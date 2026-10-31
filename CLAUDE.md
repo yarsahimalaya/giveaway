@@ -5,7 +5,7 @@ Comment exports from Himali Green giveaways, plus a static site that draws winne
 ## Layout
 
 - `<month>-<year>-giveaway/` — one folder per giveaway, e.g. `oct-2026-giveaway/`, holding `comments.csv` and a `README.md` listing the source posts and counts.
-- `site/` — Next.js winner picker, hosted on Cloudflare Pages.
+- `picker/` — Vite + React winner picker, hosted on Cloudflare Pages.
 
 ## Comment CSVs
 
@@ -15,10 +15,10 @@ Comment exports from Himali Green giveaways, plus a static site that draws winne
 - Facebook profile links: `https://www.facebook.com/<slug>` or `https://www.facebook.com/profile.php?id=<id>`. Instagram: `https://www.instagram.com/<username>/`.
 - When collecting, load every comment (switch Facebook to "All comments", expand replies) and check the row count against the count the post shows.
 
-## Site requirements (`site/`)
+## Site requirements (`picker/`)
 
-- Must be **entirely static**: `output: "export"` in `next.config.ts`, built to `site/out/`. No API routes, server actions, middleware, ISR, or `next/image` optimization — anything that needs a server breaks Cloudflare Pages static hosting.
-- Cloudflare Pages settings: root `site`, build `npm run build`, output `out`.
+- Must be **entirely static**, built to `picker/dist/`. Nothing that needs a server, since that breaks Cloudflare Pages static hosting.
+- Cloudflare Pages settings: root `picker`, build `npm run build`, output `dist`.
 - The user uploads one or more CSV files; parsing happens client-side only (CSV data contains people's names and profiles — never send it anywhere).
 - The user chooses X, the number of winners, and the site picks X distinct winners at random.
 - Randomness uses `crypto.getRandomValues` with an unbiased partial Fisher–Yates shuffle (`site/lib/entries.ts`), never `Math.random`.

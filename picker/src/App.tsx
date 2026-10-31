@@ -135,6 +135,12 @@ export default function App() {
           </motion.div>
         </AnimatePresence>
       </main>
+      <footer className="site-footer">
+        This picker is open source:{" "}
+        <a href="https://github.com/yarsahimalaya/giveaway" target="_blank" rel="noopener noreferrer">
+          github.com/yarsahimalaya/giveaway
+        </a>
+      </footer>
     </div>
   );
 }
