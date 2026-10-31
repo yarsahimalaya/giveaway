@@ -47,6 +47,9 @@ export function Header({ step, enabled, onStep, onReset, hasData }: HeaderProps)
       </nav>
 
       <div className="topbar-end">
+        <a className="btn btn-ghost btn-sm" href="./about/">
+          How to use
+        </a>
         {hasData && (
           <ConfirmButton className="btn btn-ghost btn-sm" confirmLabel="Clear everything?" onConfirm={onReset} title="Remove the uploaded data, rules and winners">
             Start over

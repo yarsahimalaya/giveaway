@@ -227,7 +227,20 @@ textarea {
 }
 
 .topbar-end {
+  display: flex;
+  gap: 8px;
   justify-self: end;
+}
+
+.topbar-end a {
+  text-decoration: none;
+}
+
+/* No room for both on phones; the footer still links to the page. */
+@media (max-width: 720px) {
+  .topbar-end a:not(:only-child) {
+    display: none;
+  }
 }
 
 /* ---------- Decorative backdrop ---------- */

@@ -10,7 +10,7 @@ npm install
 npm run dev        # http://localhost:5173
 ```
 
-`npm run build` writes a static site to `dist/`. It runs entirely in the browser (nothing is uploaded anywhere), so `dist/` can be opened via `npm run preview` or hosted on any static host.
+The how-to-use page lives at `/about/` (`about/index.html`). `npm run build` writes a static site to `dist/`. It runs entirely in the browser (nothing is uploaded anywhere), so `dist/` can be opened via `npm run preview` or hosted on any static host.
 
 ## Host it on Cloudflare Pages
 

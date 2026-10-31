@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#FFF8EC" />
+    <title>How to Use Winner Picker: Draw Giveaway Winners</title>
+    <meta name="description" content="How to draw giveaway winners from a comment CSV in three steps: upload, set the rules, and spin. Plus the open source comment data from our giveaways." />
+    <link rel="canonical" href="https://giveaway-ch2.pages.dev/about/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Winner Picker" />
+    <meta property="og:url" content="https://giveaway-ch2.pages.dev/about/" />
+    <meta property="og:title" content="How to Use Winner Picker" />
+    <meta property="og:description" content="Draw giveaway winners from a comment CSV in three steps: upload, set the rules, and spin." />
+    <meta property="og:image" content="https://giveaway-ch2.pages.dev/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Winner Picker: draw giveaway winners from your post comments." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How to Use Winner Picker" />
+    <meta name="twitter:description" content="Draw giveaway winners from a comment CSV in three steps: upload, set the rules, and spin." />
+    <meta name="twitter:image" content="https://giveaway-ch2.pages.dev/og-image.png" />
+    <meta name="twitter:image:alt" content="Winner Picker: draw giveaway winners from your post comments." />
+
+    <script type="module" src="/src/about.ts"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar about-topbar">
+        <a class="brand" href="../">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.5l2.7 6.1 6.6.6-5 4.400 1.500 6.500L12 16.700l-5.800 3.400 1.500-6.500-5-4.400 6.600-.6z" />
+            </svg>
+          </span>
+          <span class="brand-name">Winner<span>Picker</span></span>
+        </a>
+        <a class="btn btn-sm about-link" href="../">Open the picker</a>
+      </header>
+
+      <main class="main about">
+        <section class="about-intro">
+          <span class="eyebrow">How to use</span>
+          <h1>Draw a winner in <mark class="highlight">three</mark> steps.</h1>
+          <p class="lead">Upload your giveaway's comments, choose who can enter, and spin the slot machine.</p>
+        </section>
+
+        <ol class="about-steps">
+          <li class="card">
+            <h2>Upload your comments</h2>
+            <p>Drop in one or more CSV files, such as a Facebook and an Instagram export, or paste a plain list of names. Columns are matched automatically and you can remap any of them. Only a name column is required.</p>
+          </li>
+          <li class="card">
+            <h2>Set the rules</h2>
+            <ul>
+              <li><strong>Entries:</strong> give each person one entry, or count every comment as a ticket.</li>
+              <li><strong>Filters:</strong> choose platforms and posts, comments or replies, skip empty or sticker-only comments, require keywords, or set a minimum number of @mentions.</li>
+              <li><strong>Exclusions:</strong> list names or profile links to leave out, such as staff, page admins and past winners.</li>
+              <li><strong>Draw settings:</strong> set the title, number of winners, reveal style, spin length, sound, and whether one person can win twice.</li>
+            </ul>
+          </li>
+          <li class="card">
+            <h2>Spin and reveal</h2>
+            <p>Press <strong>Spin</strong> or <kbd>Space</kbd>. Each winner gets a full-screen reveal with <strong>Check profile</strong> and <strong>Disqualify &amp; redraw</strong>. Copy the winners list or download it as a CSV when you're done. Press <kbd>F</kbd> for presentation mode if you're recording or streaming.</p>
+          </li>
+        </ol>
+
+        <section class="about-section">
+          <h2>Your data stays in your browser</h2>
+          <p>Your files are read on your device and are never uploaded. Your data, rules and winners are saved in this browser so a refresh won't lose them. <strong>Start over</strong> clears everything.</p>
+        </section>
+
+        <section class="about-section">
+          <h2>Our giveaway data is open source too</h2>
+          <p>We publish the comment CSV files from our giveaways alongside the picker's code, so anyone can see who entered and run the same list through the picker.</p>
+          <ul>
+            <li><a href="https://github.com/yarsahimalaya/giveaway/tree/main/oct-2026-giveaway" target="_blank" rel="noopener noreferrer">October 2026 giveaway CSV files</a></li>
+          </ul>
+        </section>
+
+        <a class="btn btn-lg about-cta" href="../">Open the picker</a>
+      </main>
+
+      <footer class="site-footer">
+        This picker is open source:
+        <a href="https://github.com/yarsahimalaya/giveaway" target="_blank" rel="noopener noreferrer">github.com/yarsahimalaya/giveaway</a>
+      </footer>
+    </div>
+  </body>
+</html>

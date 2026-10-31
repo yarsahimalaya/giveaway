@@ -136,7 +136,7 @@ export default function App() {
         </AnimatePresence>
       </main>
       <footer className="site-footer">
-        This picker is open source:{" "}
+        <a href="./about/">How to use</a> · This picker is open source:{" "}
         <a href="https://github.com/yarsahimalaya/giveaway" target="_blank" rel="noopener noreferrer">
           github.com/yarsahimalaya/giveaway
         </a>

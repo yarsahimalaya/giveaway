@@ -1,0 +1,120 @@
+/* ---------- How to use page ---------- */
+
+.about-topbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 860px;
+}
+
+.about-topbar .brand {
+  color: inherit;
+  text-decoration: none;
+}
+
+.about-link,
+.about-cta {
+  text-decoration: none;
+}
+
+.about {
+  max-width: 860px;
+}
+
+.about-intro {
+  padding: 24px 0 36px;
+}
+
+.about-intro > * + * {
+  margin-top: 18px;
+}
+
+.about h2 {
+  font: 800 26px/1.15 var(--display);
+  letter-spacing: -0.02em;
+}
+
+.about h2 + p,
+.about h2 + ul,
+.about p + ul {
+  margin-top: 10px;
+}
+
+.about ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.about ul li + li {
+  margin-top: 8px;
+}
+
+.about p,
+.about ul {
+  color: var(--ink-2);
+}
+
+.about strong {
+  color: var(--ink);
+}
+
+.about a:not(.btn) {
+  color: var(--violet);
+  font-weight: 600;
+}
+
+.about kbd {
+  padding: 1px 7px;
+  font: 700 13px/1.4 var(--body);
+  color: var(--ink);
+  background: var(--paper-2);
+  border: 2px solid var(--ink);
+  border-radius: 7px;
+}
+
+.about-steps {
+  display: grid;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.about-steps > li {
+  padding-left: 80px;
+  counter-increment: step;
+}
+
+.about-steps > li::before {
+  content: counter(step);
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  font: 800 20px/1 var(--display);
+  background: var(--sun);
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+}
+
+.about-section {
+  margin-top: 44px;
+}
+
+.about-cta {
+  margin-top: 40px;
+}
+
+@media (max-width: 720px) {
+  .about-topbar {
+    flex-wrap: nowrap;
+  }
+
+  .about-steps > li {
+    padding-left: 22px;
+    padding-top: 78px;
+  }
+}
